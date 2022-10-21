@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 0.94em Arial,Helvetica,sans-serif;
+}
+
+.main_layout{
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-layout-content{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    display:flex;
+    justify-content: center;
+}
+
+.search_yandex{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.letter_YA{
+    color: #ff2c2b;
+}
+
+.search_line{
+    border: #ffc93d solid 2px;
+    background-color: #ffc93d;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.search_input{
+    height: 35px;
+    width: 560px;
+    border: none;
+    border-radius: 9px 5px 5px 9px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: lighter;
+} 
+
+.search_input:focus {
+    outline: none;
+  }
+
+.search_btn{
+    margin: 5px;
+    width: 60px;
+    background-color: #ffc93d;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.error{
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.error_name{
+    margin: 29px 0 10px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.error_text{
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.error_link{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.service{
+    max-width: 520px;
+    margin: 38px auto 30px;
+}
+
+.service_list{
+    max-height: 130px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.service_element {
+    margin: 0;
+    max-width: 530px;
+    padding-bottom: 13px;
+    display: flex;
+    font-size: small;
+  }
+
+.service_icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.service_link{
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.footer_element{
+    margin-right: 20px;
+    color: #9fa1a2;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+@media(min-width:320px) and (max-width:768px){
+    .service_element {
+        max-width: 100%;
+    }
+    .error{
+        max-width: 100%;
+    }
+    .service{
+        margin:0;
+        max-width: 100%;
+    }
+    .search_input{
+        width:100%;
+    }
+    .search{
+        flex-direction: column;
+        align-items: center;
+    }
+    .search h1{
+        margin-bottom: 10px;
+    }
+    .search_line{
+        width:100%;
+    }
+    .block{
+        width:100%;
+    }
+    .main_layout{
+        padding:10px;
+    }
+    .service_list{
+        flex-wrap: nowrap;
+    }
+}
