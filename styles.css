@@ -84,7 +84,7 @@ body{
 .error_link{
     text-decoration: none;
     cursor: pointer;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 .service{
@@ -122,6 +122,7 @@ body{
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    margin: 15px;
 }
 
 .footer_element{
